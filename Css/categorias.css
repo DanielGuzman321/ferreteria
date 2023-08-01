@@ -1,0 +1,174 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el encabezado */
+.header {
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(/images/Ser1.jpg);
+    background-repeat: no-repeat;
+    padding: 110px 0 0 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffc901;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: border-color 0.2s ease;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-txt {
+    flex-basis: 50%;
+    margin-right: 25px;
+}
+
+span {
+    color: #FFF829;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.header-txt p {
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.products {
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: #111419;
+}
+
+.box-container {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    border-top: 2px solid #FF4000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0,0,0.2);
+    background-color: #F6FAFB;
+    display: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6),
+.box:nth-child(7),
+.box:nth-child(8) {
+    display: inline-block;
+}
+
+.box img {
+    height: 200px;
+}
+
+.product-txt h3 {
+    font-size: 18px;
+    color: #111419;
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 5px;
+}
+
+.product-txt h3 {
+    font-size: 18px;
+    color: #111419;
+    margin-bottom: 10px;
+}
+
+.marca {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111419;
+}
+
+.clave {
+    font-size: 10px;
+    font-weight: 700;
+    color: #515557 !important;
+}
+
+.codigo {
+    font-size: 10px;
+    font-weight: 700;
+    color: #515557 !important;
+}
