@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -24,28 +24,40 @@ img{
 .header {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.1)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.1)),
         url(/images/Ser1.jpg);
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     padding: 110px 0 0 0;
 }
 
 .categorias h2 {
-    text-align: center; /* Centrar el texto horizontalmente */
-    line-height: 0px; /* Centrar el texto verticalmente */
+    text-align: center;
+    /* Centrar el texto horizontalmente */
+    line-height: 0px;
+    /* Centrar el texto verticalmente */
 }
 
+.menu-container{
+    padding: 0 320px 0 320px;
 
-.menu {
+    justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     align-items: center;
+}
+
+.menu {
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -55,23 +67,27 @@ img{
     font-weight: 800;
 }
 
-.menu .navbar ul li {
+.navbar {
+    position: relative;
+}
+
+.navbar li {
     position: relative;
     float: left;
 
 }
 
-.menu .navbar ul li a {
-    font-size: 18px;    
+.navbar li a {
+    font-size: 18px;
     padding: 20px;
     color: #ffffff;
     display: block;
 }
 
-.menu .navbar ul li a:hover {
-  color:#a0a0a0;
-  text-decoration:none;
-  transition: border-color 0.2s ease;
+.navbar li a:hover {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: border-color 0.2s ease;
 }
 
 #menu {
@@ -99,7 +115,8 @@ table {
     width: 100%;
 }
 
-th, td {
+th,
+td {
     color: #FFFFFF;
 }
 
@@ -129,7 +146,7 @@ span {
     font-weight: 600;
     display: block;
     margin-bottom: 25px;
-        margin-top: 35px;
+    margin-top: 35px;
 }
 
 .header-txt h1 {
@@ -138,15 +155,12 @@ span {
     line-height: 1;
     color: #ffffff;
     margin-bottom: 35px;
-
 }
 
 .header-txt p {
     font-size: 17px;
     color: #ffffff;
     margin-bottom: 35px;
-
-
 }
 
 .butons {
@@ -184,16 +198,27 @@ span {
 
 /* Estilos modificados para los contenedores .ofert-1 */
 .ofert-1 {
-    flex-basis: calc(33.33% - 30px); /* Ajustar el ancho para que quepan tres contenedores en una fila */
+    flex-basis: calc(33.33% - 30px);
+    /* Ajustar el ancho para que quepan tres contenedores en una fila */
     margin: 10px;
     display: flex;
-    flex-direction: row; /* Establecer la dirección flex como horizontal */
-    border-radius: 8px; /* Agregar bordes redondeados para crear un aspecto de tarjeta */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra para un efecto 3D sutil */
-    overflow: hidden; /* Ocultar cualquier contenido que se desborde del contenedor */
+    flex-direction: row;
+    /* Establecer la dirección flex como horizontal */
+    border-radius: 8px;
+    /* Agregar bordes redondeados para crear un aspecto de tarjeta */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Agregar sombra para un efecto 3D sutil */
+    overflow: hidden;
+    /* Ocultar cualquier contenido que se desborde del contenedor */
 }
 
-.b1, .b2, .b3, .b4, .b5, .b6, .b7 {
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6,
+.b7 {
     background-color: #FF4000;
 }
 
@@ -221,13 +246,16 @@ span {
     padding: 5px 10px;
     /* Agregar estilos para el enlace en el estado "hover" */
     transition: border-color 0.2s ease;
-    text-decoration: none; /* Eliminamos la decoración de subrayado predeterminada */
+    text-decoration: none;
+    /* Eliminamos la decoración de subrayado predeterminada */
 }
 
 /* Agregar efecto de hover tanto al enlace como al texto */
 .ofert-txt a:hover {
-    border-color: #a0a0a0; /* Cambiar color del borde en el enlace */
-    color: #a0a0a0; /* Cambiar color del texto */
+    border-color: #a0a0a0;
+    /* Cambiar color del borde en el enlace */
+    color: #a0a0a0;
+    /* Cambiar color del texto */
 }
 
 /* Styles for the images */
@@ -265,7 +293,7 @@ h2 {
     border-top: 2px solid #FF4000;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background-color: #F6FAFB;
     display: none;
 }
@@ -319,7 +347,8 @@ h2 {
     color: #515557 !important;
 }
 
-.btn-2, .btn-3 {
+.btn-2,
+.btn-3 {
     background-color: #FF4000;
     margin-top: 50px;
     display: inline-block;
@@ -328,11 +357,12 @@ h2 {
     color: #FFFFFF;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 }
 
-.bnt-2:hover, .btn-3:hover {
+.bnt-2:hover,
+.btn-3:hover {
     background-color: #cb4c08;
 }
 
@@ -342,7 +372,8 @@ h2 {
     border-radius: 5px;
 }
 
-.btn-2, .btn-3 {
+.btn-2,
+.btn-3 {
     background-color: #FF4000;
     margin-top: 50px;
     display: inline-block;
@@ -351,11 +382,12 @@ h2 {
     color: #FFFFFF;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 
 }
 
-.bnt-2:hover, .btn-3:hover {
+.bnt-2:hover,
+.btn-3:hover {
     background-color: #cb4c08;
 }
 
@@ -418,170 +450,183 @@ h2 {
     color: #9BCE21;
 }
 
-* {box-sizing:border-box}
+* {
+    box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-* {box-sizing:border-box}
+* {
+    box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
     background: #ffc901;
-    max-width: 600px; /* Modifica el ancho máximo según tus necesidades */
+    max-width: 600px;
+    /* Modifica el ancho máximo según tus necesidades */
     position: relative;
     margin: auto;
-  }
+}
 
 .slideshow-container .mySlides img {
-    width: 100%; /* Ajusta el ancho deseado para las imágenes */
-    height: auto; /* La altura se ajustará automáticamente */
-  }
-  
+    width: 100%;
+    /* Ajusta el ancho deseado para las imágenes */
+    height: auto;
+    /* La altura se ajustará automáticamente */
+}
+
 /* Hide the images by default */
 .mySlides {
     display: none;
-  }
+}
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 .carousel-section {
@@ -589,20 +634,141 @@ h2 {
 }
 
 .carousel-item img {
-    max-width: 100%; /* Ajustar el valor de ancho máximo según tus necesidades */
-    height: auto; /* Permitir que la altura se ajuste automáticamente para conservar la proporción */
-    display: block; /* Asegurarse de que la imagen se comporte como un bloque para alinear correctamente */
-    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    max-width: 100%;
+    /* Ajustar el valor de ancho máximo según tus necesidades */
+    height: auto;
+    /* Permitir que la altura se ajuste automáticamente para conservar la proporción */
+    display: block;
+    /* Asegurarse de que la imagen se comporte como un bloque para alinear correctamente */
+    margin: 0 auto;
+    /* Centrar las imágenes horizontalmente */
 }
-
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Estilos generales para la lista de marcas */
+.filtro {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255);
+    /* Asegurar que el fondo se muestre dentro del contenedor */
+    height: 100px;
+}
+
+.marca {
+    display: flex;
+    /* Mostrar las marcas en una fila horizontal */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.marca li {
+    margin: 30px;
+    /* Aumenta la distancia entre los elementos */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.marca li a {
+    text-decoration: none;
+}
+
+/* Estilos para las imágenes de las marcas */
+.marca img {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Efecto al pasar el mouse por encima de una marca */
+.marca li:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+/* Estilo de color para el texto del enlace */
+.marca li a {
+    color: #000;
+    /* Cambia el color del texto a negro */
+    text-decoration: none;
+}
+
+/* Efecto al pasar el mouse por encima de un enlace */
+.marca li a:hover {
+    color: #ff0000;
+    /* Cambia el color del texto al pasar el mouse por encima */
+    text-decoration: none;
+}
+
+/* BUSCADOR*/
+
+/* Estilos para el formulario de búsqueda */
+.search-container {
+    width: 600px;
+    height: 40px;
+    background: #444;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos del formulario */
+    width: 100%; /* Ajustar el ancho del formulario al 100% del contenedor */
+}
+
+.search-input {
+    flex: 1; /* Hace que el input ocupe el espacio restante */
+    padding: 10px 5px;
+    color: #ccc;
+    border: 0;
+    background: transparent;
+    border-radius: 5px 0 0 px;
+}
+
+.search-input:focus {
+    outline: 0;
+    background: transparent;
+}
+
+.search-button {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    color: #fff;
+    background: transparent;
+    border-left: 1px solid #fff;
+    border-radius: 0 3px 3px 0;
+}
+
+.search-button:hover {
+    background: #fff;
+    color: #444;
+}
+
+.search-button:active {
+    box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+}
+
+.search-button:focus {
+    outline: 0;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }

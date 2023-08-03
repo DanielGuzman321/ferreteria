@@ -10,35 +10,63 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="/Css/categorias.css">
+  <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="/Css/styles.css">
   <link rel="stylesheet" href="/Css/footer.css">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="images/logo.jpg">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="menu container">
+    <div class="menu-container">
       <a href="/index.html">
         <img src="/images/logo.png" alt="logo" width="110" height="110">
       </a>
+      <div class="search-container">
+        <form class="search-form" action="">
+          <input type="search" class="search-input" placeholder="¿Qué estás buscando?..." required>
+          <button type="submit" class="search-button">Buscar</button>
+        </form>
+      </div>
+
       <nav class="navbar">
-        <ul>
-          <li><a href="/html/servicios.html">Servicios <i class="fa-solid fa-screwdriver-wrench"></i></a> </li>
-          <li><a href="/html/contactanos.html">Contacto <i class="fa-solid fa-phone"></i></a></li>
-          <li><a href="/html/contactanos.html">Categorias <i class="fa-solid fa-helmet-safety"></i></a></li>
-        </ul>
+
+        <li><a href="">Servicios <i class="fa-solid fa-screwdriver-wrench"></i></a> </li>
+        <li><a href="/html/contactanos.html">Contacto <i class="fa-solid fa-phone"></i></a></li>
+
       </nav>
     </div>
-
-    <div class="header-txt">
-      <br>
-      <h1>Herramientas</h1>
-      <br>
-    </div>
   </header>
+
+  <main class="categorias">
+    <br><br><br>
+    <h2>HERRAMIENTAS</h2>
+  </main>
+  
+  <subheader class="subheader">
+    <div class="filtro filtromark">
+      <ul id="marca" class="marca">
+        <li><a class="fiero" href="https://www.truper.com/CatVigente/FIERO-19.html"><img
+              src="https://www.truper.com/CatVigente/img/FIERO.svg"></a></li>
+        <li><a class="foset" href="https://www.truper.com/CatVigente/FOSET-46.html"><img
+              src="https://www.truper.com/CatVigente/img/FOSET.svg"></a></li>
+        <li><a class="hermex" href="https://www.truper.com/CatVigente/HERMEX-153.html"><img
+              src="https://www.truper.com/CatVigente/img/HERMEX.svg"></a></li>
+        <li><a class="klintek" href="https://www.truper.com/CatVigente/KLINTEK-182.html"><img
+              src="https://www.truper.com/CatVigente/img/KLINTEK.svg"></a></li>
+        <li><a class="pretul check" href="https://www.truper.com/CatVigente/TRUPER-190.html"><img
+              src="https://www.truper.com/CatVigente/img/PRETUL.svg"></a></li>
+        <li><a class="truper check" href="https://www.truper.com/CatVigente/TRUPER-190.html"><img
+              src="https://www.truper.com/CatVigente/img/TRUPER.svg"></a></li>
+        <li><a class="volteck" href="https://www.truper.com/CatVigente/VOLTECK-637.html"><img
+              src="https://www.truper.com/CatVigente/img/VOLTECK.svg"></a></li>
+        <li><a class="voltechlait" href="https://www.truper.com/CatVigente/VOLTECK-LAIT-714.html"><img
+              src="https://www.truper.com/CatVigente/img/VOLTECK_LAIT.svg"></a></li>
+      </ul>
+    </div>
+  </subheader>
 
   <main class="products container">
     <div class="box-container" id="lista-1">
@@ -259,5 +287,3 @@
 <script src="script.js"></script>
 
 </html>
-
-
